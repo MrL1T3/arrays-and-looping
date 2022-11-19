@@ -15,10 +15,15 @@ function specialCounter(number) {
   for (element of countArray) {
     console.log(element)
     if (element.toString().match(/3/) != null){
-      finalArray.push("Won't you be my neighbor?")
+      finalArray.push("Won't you be my neighbor?");
     }
-    else {
-      finalArray.push(countArray.indexOf(element))
+    else if (element.toString().match(/3/) === null){
+      if (element.toString().match(/2/) != null){
+        finalArray.push("Beep!");
+      }
+      else {
+        finalArray.push(countArray.indexOf(element));
+      }
     }
   }
   return finalArray;
