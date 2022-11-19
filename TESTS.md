@@ -12,3 +12,9 @@ Code:
 let number = 4;
 specialCounter(number);
 Expected Output: [1, 2, "Won't you be my neighbor?", 4]
+
+Test: "Boop!' to a new array if the current number contains 2"
+Code:
+let number = 4;
+specialCounter(number);
+Expected Output: [1, "Boop!", "Won't you be my neighbor?", 4]
