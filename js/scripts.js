@@ -1,12 +1,15 @@
 //business logic
 
 function specialCounter(number) {
-  let countArray = ["1"]
+  let countArray = [1]
   let numberCounter = 2;
   let indexCounter = 0;
-  if (indexCounter < number) {
-    countArray.push(numberCounter);
-    indexCounter ++;
-    numberCounter ++;
+  for (let i = 0; i < number; i++) {
+    if (indexCounter < number) {
+      countArray.push(numberCounter);
+      indexCounter ++;
+      numberCounter ++;
+    }
   }
+  return countArray;
 }
