@@ -1,6 +1,12 @@
 //business logic
 
 function specialCounter(number) {
-  countArray.apply(null, Array(number)).map(function (x, i) { return i; })
-  return countArray;
+  let countArray = ["1"]
+  let numberCounter = 2;
+  let indexCounter = 0;
+  if (indexCounter < number) {
+    countArray.push(numberCounter);
+    indexCounter ++;
+    numberCounter ++;
+  }
 }
