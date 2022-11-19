@@ -5,6 +5,7 @@ function specialCounter(number) {
   let finalArray = [];
   let numberCounter = 1;
   let indexCounter = 0;
+  let specialList = "";
   for (let i = 0; i < number; i++) {
     if (indexCounter < number) {
       countArray.push(numberCounter);
@@ -13,7 +14,6 @@ function specialCounter(number) {
     }
   }
   for (element of countArray) {
-    console.log(element)
     if (element.toString().match(/3/) != null){
       finalArray.push("Won't you be my neighbor?");
     }
@@ -31,5 +31,6 @@ function specialCounter(number) {
       }
     }
   }
-  return finalArray;
+  specialList = finalArray.join(", ")
+  return specialList
 }
