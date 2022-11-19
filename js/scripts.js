@@ -11,5 +11,4 @@ function specialCounter(number) {
       numberCounter ++;
     }
   }
-  return countArray;
 }
