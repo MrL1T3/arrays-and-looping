@@ -5,12 +5,17 @@ function specialCounter(number) {
   let finalArray = [0];
   let numberCounter = 1;
   let indexCounter = 0;
-  for (let i = 0; i < number-1; i++) {
+  for (let i = 0; i < number; i++) {
     if (indexCounter < number) {
       countArray.push(numberCounter);
       indexCounter ++;
       numberCounter ++;
     }
   }
-  return countArray;
+  for (element of countArray) {
+    console.log(element)
+    if (element.toString().match(/3/) != null)
+      finalArray.push("Won't you be my neighbor?")
+  }
+  //console.log(countArray);
 }
