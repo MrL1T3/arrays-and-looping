@@ -17,12 +17,17 @@ function specialCounter(number) {
     if (element.toString().match(/3/) != null){
       finalArray.push("Won't you be my neighbor?");
     }
-    else if (element.toString().match(/3/) === null){
+    else {
       if (element.toString().match(/2/) != null){
         finalArray.push("Beep!");
       }
       else {
-        finalArray.push(countArray.indexOf(element));
+        if (element.toString().match(/1/) != null){
+          finalArray.push("Boop!");
+        }
+        else {
+          finalArray.push(countArray.indexOf(element));
+        }
       }
     }
   }
