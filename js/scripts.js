@@ -32,5 +32,4 @@ function specialCounter(number) {
     }
   }
   return finalArray;
-  //console.log(countArray);
 }
