@@ -24,3 +24,13 @@ Code:
 let number = 4;
 specialCounter(number);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4]
+
+
+
+
+Describe setupUI
+
+Test: "It should take the input number and return the proper list associated with it's length"
+Code:
+number input = 13 and "submit" button clicked
+Expected output: empty P element now displaying "Your result is 0, Boop!, Beep!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Boop!, Boop!, Beep!, Won't you be my neighbor?"
