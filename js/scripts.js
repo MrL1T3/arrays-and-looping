@@ -51,13 +51,6 @@ var setupUI = function() {
     event.preventDefault();
     return false;
   });
-
-  // let elemID = document.getElementById("submit");
-  // console.log("elemID is:"+elemID);
-  // elemID.addEventListener('click', (event) => {
-  //   console.log("Clicked!");
-  //   return false;
-  // });
   console.log("Added listener for DOM loaded.");
 }();
 
