@@ -37,17 +37,13 @@ window.onload=function(){
 
   //UI Logic
 var setupUI = function() {
-  console.log("I ran");
   let inputValue = 0;
   let form = document.getElementById("input-form");
-  console.log("form is", form);
   form.addEventListener('submit', (event) => {
-    console.log("Submitted!");
     inputValue = document.getElementById('number-input').value
     document.getElementById('result-space').innerHTML = "Your result is " + specialCounter(inputValue);
     event.preventDefault();
     return false;
   });
-  console.log("Added listener for DOM loaded.");
 }();
 }
