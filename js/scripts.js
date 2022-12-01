@@ -1,6 +1,5 @@
 window.onload=function(){
   //Business Logic
-
   function specialCounter(number) {
     let countArray = [0]
     let finalArray = [];
@@ -36,8 +35,6 @@ window.onload=function(){
     return specialList
   }
 
-
-
   //UI Logic
 var setupUI = function() {
   console.log("I ran");
@@ -53,5 +50,4 @@ var setupUI = function() {
   });
   console.log("Added listener for DOM loaded.");
 }();
-
 }
