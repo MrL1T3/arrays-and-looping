@@ -34,7 +34,7 @@ window.onload=function(){
     specialList = finalArray.join(", ")
     return specialList
   }
-
+ 
   //UI Logic
 var setupUI = function() {
   let inputValue = 0;
@@ -46,4 +46,4 @@ var setupUI = function() {
     return false;
   });
 }();
-}
+} 
